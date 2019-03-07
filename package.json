@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/fortunee/checkWeather/issues"
   },
-  "homepage": "https://github.com/fortunee/checkWeather#readme"
+  "homepage": "https://github.com/fortunee/checkWeather#readme",
+  "dependencies": {
+    "axios": "^0.18.0"
+  }
 }
