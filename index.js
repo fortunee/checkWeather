@@ -20,8 +20,8 @@ const checkWeather = async ([locationName, locationZipCode]) => {
   const currentWeather = await getWeatherByZipCode(locationZipCode)
 
   if (currentWeather.data) {
-    const weatherData = currentWeather.data.weather
-    console.log(`${currentTime}: There's a ${weatherData[weatherData.length - 1].description} in ${locationName}`)
+    const { weather } = currentWeather.data
+    console.log(`${currentTime}: There's a ${weather[weather.length - 1].description} in ${locationName}`)
   }
 }
 
